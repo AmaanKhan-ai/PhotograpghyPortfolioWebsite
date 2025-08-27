@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="icon" href="assets/logo-white.png" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f0faff, #e0f7fa);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      opacity: 0.9;
+      letter-spacing: 1px;
+      color: #d6336c; /* Fashion-themed pink/red tone */
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 350px; /* Uniform height */
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Fade effect for all images on gallery hover */
+    .gallery:hover img {
+      opacity: 0.4;
+    }
+
+    /* Highlight hovered image */
+    .gallery img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .gallery img {
+        height: 220px; /* Adjusted height for mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fashion</h1>
+  </header>
+  <div class="gallery">
+    <img src="assets/f5.jpg" alt="Portrait 1" />
+    <img src="assets/f6.jpg" alt="Portrait 2" />
+    <img src="assets/f12.jpg" alt="Portrait 3" />
+    <img src="assets/f4.jpg" alt="Portrait 4" />
+    <img src="assets/f7a.jpg" alt="Portrait 5" />
+    <img src="assets/f9.jpg" alt="Portrait 6" />
+    <img src="assets/f1.jpg" alt="Portrait 7" />
+    <img src="assets/f2.jpg" alt="Portrait 8" />
+    <img src="assets/f3.jpg" alt="Portrait 9" />
+    <img src="assets/f10.jpg" alt="Portrait 10" />
+    <img src="assets/f11.jpg" alt="Portrait 11" />
+    <img src="assets/f13.jpg" alt="Portrait 12" />
+  </div>
+</body>
+</html>

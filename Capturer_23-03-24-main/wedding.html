@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="icon" href="assets/logo-white.png" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to right, #fff0f5, #e0f7fa); /* Light wedding tone */
+      color: #4b4b4b;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #b76e79; /* Romantic pink */
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 2px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 3px solid #fff5f8;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Faded effect on all, but highlight hovered */
+    .gallery:hover img {
+      opacity: 0.4;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      opacity: 1;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+      z-index: 1;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .gallery img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wedding Images</h1>
+  </header>
+  <div class="gallery">
+    <img src="assets/W1jpg.jpg" alt="Portrait 1" />
+    <img src="assets/W2.jpg" alt="Portrait 2" />
+    <img src="assets/W3.jpg" alt="Portrait 3" />
+    <img src="assets/W4.jpg" alt="Portrait 4" />
+    <img src="assets/W5.jpg" alt="Portrait 5" />
+    <img src="assets/W6.jpg" alt="Portrait 6" />
+    <img src="assets/W7.jpg" alt="Portrait 7" />
+    <img src="assets/W8.jpg" alt="Portrait 8" />
+    <img src="assets/w9.jpg" alt="Portrait 9" />
+    <img src="assets/w10.jpg" alt="Portrait 10" />
+    <img src="assets/w11.jpg" alt="Portrait 11" />
+    <img src="assets/w12.jpg" alt="Portrait 12" />
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="icon" href="assets/logo-white.png" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f0faff, #e0f7fa);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      opacity: 0.9;
+      letter-spacing: 1px;
+      color: #0077b6;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Hover on entire gallery */
+    .gallery:hover img {
+      opacity: 0.4;
+    }
+
+    /* Hovered image */
+    .gallery img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+      z-index: 1;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portraits</h1>
+  </header>
+  <div class="gallery">
+    <img src="assets/p1.jpg" alt="Portrait 1" />
+    <img src="assets/p2.jpg" alt="Portrait 2" />
+    <img src="assets/p3.jpg" alt="Portrait 3" />
+    <img src="assets/p4.jpg" alt="Portrait 4" />
+    <img src="assets/p5jpg.jpg" alt="Portrait 5" />
+    <img src="assets/p6.jpg" alt="Portrait 6" />
+    <img src="assets/p7.jpg" alt="Portrait 7" />
+    <img src="assets/p8.jpg" alt="Portrait 8" />
+    <img src="assets/p9.jpg" alt="Portrait 9" />
+    <img src="assets/p13.jpg" alt="Portrait 10" />
+    <img src="assets/p11.jpg" alt="Portrait 11" />
+    <img src="assets/p12.jpg" alt="Portrait 12" />
+  </div>
+</body>
+</html>
